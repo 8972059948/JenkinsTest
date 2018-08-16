@@ -11,10 +11,5 @@ pipeline {
                 sh 'npm install' 
             }
         }
-        stage('Run') { 
-            steps {
-                sh 'yarn dev-server' 
-            }
-        }
     }
 }
