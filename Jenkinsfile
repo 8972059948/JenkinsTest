@@ -11,10 +11,12 @@ pipeline {
         }
 
         stage('Build') {
-            try {
-                sh 'npm install'
-            } catch(exc) {
-                echo 'Something went worng!'
+            step {
+                try {
+                    sh 'npm install'
+                } catch(exc) {
+                    echo 'Something went worng!'
+                }
             }
         }
 
