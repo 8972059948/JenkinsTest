@@ -15,7 +15,6 @@ pipeline {
                 sh 'npm install'
             } catch(exc) {
                 echo 'Something went worng!'
-                throw
             }
         }
 
